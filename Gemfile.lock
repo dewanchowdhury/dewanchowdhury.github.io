@@ -1,11 +1,12 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    activesupport (7.0.3.1)
+    activesupport (6.1.6.1)
       concurrent-ruby (~> 1.0, >= 1.0.2)
       i18n (>= 1.6, < 2)
       minitest (>= 5.1)
       tzinfo (~> 2.0)
+      zeitwerk (~> 2.3)
     addressable (2.8.0)
       public_suffix (>= 2.0.2, < 5.0)
     bibtex-ruby (6.0.0)
@@ -103,8 +104,7 @@ GEM
       rexml
     kramdown-parser-gfm (1.1.0)
       kramdown (~> 2.0)
-    latex-decode (0.3.2)
-    libv8-node (16.10.0.0-x86_64-linux-musl)
+    latex-decode (0.4.0)
     liquid (4.0.3)
     listen (3.7.1)
       rb-fsevent (~> 0.10, >= 0.10.3)
@@ -116,12 +116,12 @@ GEM
     mime-types (3.4.1)
       mime-types-data (~> 3.2015)
     mime-types-data (3.2022.0105)
-    mini_racer (0.6.2)
-      libv8-node (~> 16.10.0.0)
     minitest (5.16.2)
     multi_xml (0.6.0)
     namae (1.1.1)
-    nokogiri (1.13.8-x86_64-linux)
+    nokogiri (1.13.8-arm64-darwin)
+      racc (~> 1.4)
+    nokogiri (1.13.8-x86_64-darwin)
       racc (~> 1.4)
     pathutil (0.16.2)
       forwardable-extended (~> 2.6)
@@ -145,9 +145,10 @@ GEM
     unicode-display_width (1.8.0)
     unicode_utils (1.4.0)
     webrick (1.7.0)
+    zeitwerk (2.6.0)
 
 PLATFORMS
-  x86_64-linux-musl
+  universal-darwin-21
 
 DEPENDENCIES
   feedjira
@@ -165,9 +166,8 @@ DEPENDENCIES
   jekyll-target-blank
   jekyll-twitter-plugin
   jemoji
-  mini_racer
   unicode_utils
   webrick
 
 BUNDLED WITH
-   2.3.17
+   2.3.18
