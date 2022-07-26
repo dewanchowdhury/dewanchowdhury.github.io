@@ -13,11 +13,13 @@ group :jekyll_plugins do
     gem 'jekyll-target-blank'
     gem 'jekyll-twitter-plugin'
     gem 'jemoji'
-    gem 'mini_racer'
     gem 'unicode_utils'
-    gem 'webrick'
+    gem 'webrick', "~> 1.7"
 end
 group :other_plugins do
     gem 'httparty'
     gem 'feedjira'
+end
+group :test do
+    gem "html-proofer", "~> 3.18"
 end
